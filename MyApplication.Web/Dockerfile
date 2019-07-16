@@ -3,7 +3,7 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 # Copy proj and restore
-COPY *.csproj ./
+COPY MyApplication.Web/*.csproj ./
 RUN dotnet restore
 # Copy everything else and build
 COPY . ./
